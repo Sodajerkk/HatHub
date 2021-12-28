@@ -268,10 +268,8 @@ function Damagefunc(Part, hit, minim, maxim, knockback, Type, Property, Delay, K
 			end
 		end
 		if blocked == false then
-			TakeDamage(h, Damage)
 			ShowDamage(hit.CFrame * CFrame.new(0, 0, Part.Size.Z / 2).p + Vector3.new(0, 1.5, 0), -Damage, 1.5, Part.BrickColor.Color)
 		else
-			TakeDamage(h, Damage / 2)
 			ShowDamage(hit.CFrame * CFrame.new(0, 0, Part.Size.Z / 2).p + Vector3.new(0, 1.5, 0), -Damage, 1.5, BrickColor.new("Bright blue").Color)
 		end
 		if Type == "Knockdown" then
